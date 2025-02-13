@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mijn website</title>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script src="javascript/index.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="index.html" class="nav-item">Technieken</a>
+        <a href="index.html" class="nav-item">Verbeteringen</a>
+        <a href="index.html" class="nav-item">Interesse's</a>
+    </nav>
+
+    <div class="container">
+        <h2> Wat kan ik allemaal? </h2>
+        <p> Ik ken de basis van het bouwen van websites met HTML, CSS en JavaScript. hieronder laat ik een paar leuke dingen zien die ik leuk vind om in te implementeren in sites.
+
+        </p>
+        
+        <div class="row">
+
+            <div class="col" id="weather">
+                
+            </div>
+
+            <div class="col">
+                <h3>3D Models</h3>
+                <p> Ik kan 3D modellen toevoegen aan websites. </p>
+                <model-viewer 
+                src="models/office_computer.glb" 
+                alt="Retro Computer" 
+                auto-rotate  
+                camera-controls
+                style="width: 300px; height: 300px;">
+                </model-viewer>
+            
+            </div>
+            <div class="col">
+                <h3>JavaScript</h3>
+                <p> Ik kan websites bouwen met JavaScript.   </p>
+            </div>
+
+
+        </div>
+        
+    </div>
+
+
+</body>
+
+
+
+</html>
