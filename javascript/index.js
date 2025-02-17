@@ -41,9 +41,8 @@ function loadModel(rotate) {
         return `
         <model-viewer 
             id="modelViewer"
-            src="./models/glr/scene.gltf" 
+            src="./models/glr/glresport.glb" 
             alt="Retro Computer" 
-            camera-controls 
             auto-rotate
             loading="lazy"
             class="w-full h-[300px] mt-4">
@@ -54,9 +53,10 @@ function loadModel(rotate) {
     return `
         <model-viewer 
             id="modelViewer"
-            src="./models/glr/scene.gltf" 
+            src="./models/glr/glresport.glb" 
             alt="Retro Computer" 
             loading="lazy"
+            camera-controls 
             auto-rotate
             class="w-full h-[300px] mt-4">
         </model-viewer>
