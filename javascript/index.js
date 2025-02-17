@@ -41,10 +41,11 @@ function loadModel(rotate) {
         return `
         <model-viewer 
             id="modelViewer"
-            src="./models/office_computer.glb" 
+            src="./models/glr/scene.gltf" 
             alt="Retro Computer" 
-            auto-rotate 
-            camera-controls
+            camera-controls 
+            auto-rotate
+            loading="lazy"
             class="w-full h-[300px] mt-4">
         </model-viewer>
         `;
@@ -53,10 +54,50 @@ function loadModel(rotate) {
     return `
         <model-viewer 
             id="modelViewer"
-            src="./models/office_computer.glb" 
+            src="./models/glr/scene.gltf" 
             alt="Retro Computer" 
-            camera-controls
+            loading="lazy"
+            auto-rotate
             class="w-full h-[300px] mt-4">
         </model-viewer>
         `;
+}
+
+function toggleWeather() {
+    let weatherBox = document.getElementById('weather');
+    let toggleBtn = document.getElementById('toggle-btn');
+
+    if (weatherBox.classList.contains('hidden')) {
+        weatherBox.classList.remove('hidden'); 
+        toggleBtn.innerText = "✖"; 
+    } else {
+        weatherBox.classList.add('hidden'); 
+        toggleBtn.innerHTML = '<img width="24" height="24" src="https://img.icons8.com/material-outlined/24/minus.png" alt="minus"/>';
+    }
+}
+
+function toggleModel() {
+    let modelBox = document.getElementById('model-content');
+    let toggleBtn = document.getElementById('toggle-model-btn');
+
+    if (modelBox.classList.contains('hidden')) {
+        modelBox.classList.remove('hidden'); 
+        toggleBtn.innerText = "✖"; 
+    } else {
+        modelBox.classList.add('hidden'); 
+        toggleBtn.innerHTML = '<img width="24" height="24" src="https://img.icons8.com/material-outlined/24/minus.png" alt="minus"/>';
+    }
+}
+
+function toggleFrameworks() {
+    let frameworksBox = document.getElementById('frameworks-content');
+    let toggleBtn = document.getElementById('toggle-frameworks-btn');
+
+    if (frameworksBox.classList.contains('hidden')) {
+        frameworksBox.classList.remove('hidden'); 
+        toggleBtn.innerText = "✖"; 
+    } else {
+        frameworksBox.classList.add('hidden'); 
+        toggleBtn.innerHTML = '<img width="24" height="24" src="https://img.icons8.com/material-outlined/24/minus.png" alt="minus"/>';
+    }
 }

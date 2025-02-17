@@ -1,0 +1,8 @@
+<div class=" bg-gray-950 p-6 rounded-lg shadow-lg border border-white border-opacity-50 transform hover:scale-105 transition duration-300">
+    <h3 class="text-2xl font-bold mb-3">Javascript Frameworks gebruiken</h3>
+    <p class="text-gray-300">Ik kan interactieve websites bouwen met React, NextJS.</p>
+    <div class="flex flex-row space-y-4">
+        <img src="https://devicon-website.vercel.app/api/react/original.svg" alt="React Logo" class="w-32 h-32 mx-auto mt-4">
+        <img src="https://devicon-website.vercel.app/api/nextjs/original.svg" alt="NextJS Logo" class="w-32 h-32 mx-auto mt-4">
+    </div>
+</div>
